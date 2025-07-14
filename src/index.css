@@ -77,6 +77,30 @@
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
   }
+  }
+  
+  @keyframes gridMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 50px); }
+  }
+  
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .glow {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.7);
+    transform: translateY(-2px);
+  }
 }
 
 /* Custom scrollbar */
