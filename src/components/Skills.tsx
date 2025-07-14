@@ -32,36 +32,14 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Technical Skills',
       icon: Code,
       color: 'from-blue-500 to-cyan-500',
       skills: [
-        { name: 'React/Next.js', level: 90 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'JavaScript', level: 90 }
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: Server,
-      color: 'from-green-500 to-emerald-500',
-      skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'REST APIs', level: 88 },
-        { name: 'GraphQL', level: 75 }
-      ]
-    },
-    {
-      title: 'Database & Cloud',
-      icon: Database,
-      color: 'from-purple-500 to-violet-500',
-      skills: [
-        { name: 'PostgreSQL', level: 82 },
-        { name: 'MongoDB', level: 78 },
-        { name: 'AWS', level: 75 },
-        { name: 'Docker', level: 70 }
+        { name: 'Python', level: 90 },
+        { name: 'ReactJS', level: 85 },
+        { name: 'NodeJS', level: 80 },
+        { name: 'MongoDB', level: 78 }
       ]
     },
     {
@@ -69,10 +47,32 @@ const Skills = () => {
       icon: Shield,
       color: 'from-red-500 to-orange-500',
       skills: [
-        { name: 'Penetration Testing', level: 80 },
-        { name: 'Network Security', level: 75 },
-        { name: 'Vulnerability Assessment', level: 85 },
-        { name: 'Ethical Hacking', level: 78 }
+        { name: 'Cyber Forensics', level: 85 },
+        { name: 'GRC', level: 80 },
+        { name: 'Risk Assessment', level: 82 },
+        { name: 'Linux', level: 88 }
+      ]
+    },
+    {
+      title: 'Database & Tools',
+      icon: Database,
+      color: 'from-purple-500 to-violet-500',
+      skills: [
+        { name: 'SQL', level: 82 },
+        { name: 'MongoDB', level: 78 },
+        { name: 'Blockchain', level: 75 },
+        { name: 'Git', level: 85 }
+      ]
+    },
+    {
+      title: 'Soft Skills',
+      icon: Brain,
+      color: 'from-green-500 to-emerald-500',
+      skills: [
+        { name: 'Analytical Thinking', level: 90 },
+        { name: 'Attention to Detail', level: 88 },
+        { name: 'Team Collaboration', level: 85 },
+        { name: 'Problem Solving', level: 92 }
       ]
     }
   ];
@@ -90,21 +90,21 @@ const Skills = () => {
 
   const certifications = [
     {
-      title: 'Certified Ethical Hacker (CEH)',
-      issuer: 'EC-Council',
+      title: 'Cisco Certified Ethical Hacker',
+      issuer: 'Cisco',
       year: '2024',
       color: 'from-red-500 to-pink-500'
     },
     {
-      title: 'AWS Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      year: '2023',
-      color: 'from-orange-500 to-yellow-500'
+      title: 'TryHackMe - Top 5%',
+      issuer: 'TryHackMe Platform',
+      year: '2024',
+      color: 'from-green-500 to-emerald-500'
     },
     {
-      title: 'React Developer Certification',
-      issuer: 'Meta',
-      year: '2023',
+      title: 'Hackathon 3.0 - Top 10 Finalist',
+      issuer: 'Data Meghe COE',
+      year: '2024',
       color: 'from-blue-500 to-cyan-500'
     }
   ];

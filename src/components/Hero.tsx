@@ -50,14 +50,14 @@ const Hero = () => {
           {/* Role */}
           <div className="text-xl md:text-2xl text-foreground/80 mb-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <span className="font-mono text-purple-400">&lt;</span>
-            Creative Developer & Cybersecurity Enthusiast
+            B.E (Hons.) Cybersecurity Student & Full Stack Developer
             <span className="font-mono text-purple-400">/&gt;</span>
           </div>
 
           {/* Description */}
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: '1s' }}>
-            Passionate about building secure, innovative solutions that bridge creativity and technology. 
-            I craft experiences that inspire and protect.
+            Highly motivated cybersecurity student with hands-on experience in secure full-stack development, 
+            threat detection, vulnerability assessment, and incident response. Eager to contribute to real-world security initiatives.
           </p>
 
           {/* CTA Buttons */}

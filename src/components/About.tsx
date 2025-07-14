@@ -57,27 +57,27 @@ const About = () => {
 
   const timeline = [
     {
-      year: '2024',
-      title: 'Cybersecurity Enthusiast',
-      description: 'Diving deep into security research and ethical hacking',
+      year: '2024-25',
+      title: 'Cybersecurity Intern at Vistra',
+      description: 'Proposed an out-of-band collaboration model, streamlining communication across 3+ IT divisions',
       icon: Shield
     },
     {
-      year: '2023',
-      title: 'Full-Stack Developer',
-      description: 'Building scalable web applications with modern technologies',
+      year: '2024',
+      title: 'Full Stack Developer Intern at Jio Pvt. Ltd.',
+      description: 'Engineered responsive UIs using React, Tailwind, and Expo, improving usability for 10,000+ users',
       icon: Code
     },
     {
-      year: '2022',
-      title: 'Open Source Contributor',
-      description: 'Contributing to various open source projects and communities',
-      icon: Users
+      year: '2022-26',
+      title: 'B.Tech in IT (Hons. Cybersecurity)',
+      description: 'Currently pursuing degree at Fr. C. Rodrigues Institute of Technology with 8.85 CGPA',
+      icon: Award
     },
     {
-      year: '2021',
-      title: 'Started Coding Journey',
-      description: 'Began exploring the world of programming and development',
+      year: '2022',
+      title: 'Senior Secondary Completion',
+      description: 'Completed from New Horizons Scholars School with 69.6%',
       icon: Lightbulb
     }
   ];
@@ -107,25 +107,24 @@ const About = () => {
             <div className="glass p-8 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4 text-purple-400">My Story</h3>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                What started as curiosity about how websites work has evolved into a passion for building 
-                secure, scalable, and beautiful applications. I believe in the power of technology to 
-                solve real-world problems while keeping security at the forefront.
+                Currently pursuing B.Tech in Information Technology (Hons. in Cybersecurity) at Fr. C. Rodrigues Institute of Technology. 
+                I'm skilled in threat detection, vulnerability assessment, and incident response, with experience in secure full-stack development.
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                When I'm not coding, you'll find me exploring the latest cybersecurity trends, 
-                contributing to open source projects, or mentoring fellow developers in their journey.
+                I'm passionate about bridging the gap between development and security, creating solutions that are both innovative and secure. 
+                Familiar with ISO 27001, NIST, and GDPR compliance frameworks.
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="glass p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold gradient-text mb-2">50+</div>
-                <div className="text-sm text-foreground/70">Projects Completed</div>
+                <div className="text-3xl font-bold gradient-text mb-2">8.85</div>
+                <div className="text-sm text-foreground/70">Current CGPA</div>
               </div>
               <div className="glass p-6 rounded-xl text-center">
                 <div className="text-3xl font-bold gradient-text mb-2">3+</div>
-                <div className="text-sm text-foreground/70">Years Experience</div>
+                <div className="text-sm text-foreground/70">Major Projects</div>
               </div>
             </div>
           </div>

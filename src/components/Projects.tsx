@@ -49,43 +49,43 @@ const Projects = () => {
   // Featured projects (hand-picked)
   const featuredProjects = [
     {
-      title: 'SecureChat Application',
-      description: 'End-to-end encrypted messaging app built with React and Node.js, featuring real-time communication and advanced security protocols.',
+      title: 'CyberNexus - AI Cybersecurity SOC Dashboard',
+      description: 'Developed an AI-powered SOC dashboard that accelerated incident triage by 40%. Features real-time threat analysis, integrated phishing simulation and deepfake alerts, boosting threat coverage.',
       image: '/api/placeholder/600/400',
-      tags: ['React', 'Node.js', 'Socket.io', 'Encryption', 'TypeScript'],
+      tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Python', 'OpenAI API'],
       github: 'https://github.com/Aishwarya2701',
       demo: '#',
       featured: true,
       type: 'security'
     },
     {
-      title: 'AI-Powered Portfolio Analyzer',
-      description: 'Machine learning tool that analyzes investment portfolios and provides risk assessment with interactive visualizations.',
+      title: 'EcoSense - Smart IoT-Based Air Quality Monitoring System',
+      description: 'Created a real-time AQI monitoring platform with live sensor data and alerts. Built web/mobile dashboards and gamified user actions via QR points. Used blockchain to ensure secure logging of 1000+ environmental records.',
       image: '/api/placeholder/600/400',
-      tags: ['Python', 'TensorFlow', 'React', 'D3.js', 'API Integration'],
+      tags: ['IoT', 'Python', 'Flask', 'JavaScript', 'Blockchain'],
       github: 'https://github.com/Aishwarya2701',
       demo: '#',
       featured: true,
-      type: 'ai'
+      type: 'iot'
     },
     {
-      title: 'Vulnerability Scanner',
-      description: 'Automated web application security scanner that identifies common vulnerabilities and generates detailed reports.',
+      title: 'Kosmos - Metacommerce E-Commerce Platform',
+      description: 'Designed a 3D shopping experience platform merging physical and digital shopping. Secured transactions through encryption and custom backend logic. Increased user engagement by 50% during beta testing.',
       image: '/api/placeholder/600/400',
-      tags: ['Python', 'Security', 'Web Scraping', 'Automation'],
+      tags: ['ReactJS', '3D JS', 'NodeJS'],
       github: 'https://github.com/Aishwarya2701',
       demo: '#',
       featured: true,
-      type: 'security'
+      type: 'web'
     }
   ];
 
   const getProjectIcon = (type: string) => {
     switch (type) {
       case 'security': return Shield;
-      case 'ai': return Code;
+      case 'iot': return Database;
       case 'web': return Globe;
-      case 'data': return Database;
+      case 'ai': return Code;
       default: return Code;
     }
   };
