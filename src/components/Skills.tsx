@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Code, Database, Shield, Palette, Server, Smartphone, Brain, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -78,14 +79,63 @@ const Skills = () => {
   ];
 
   const tools = [
-    { name: 'VS Code', icon: '🔧' },
-    { name: 'Git', icon: '📚' },
-    { name: 'Figma', icon: '🎨' },
-    { name: 'Postman', icon: '🚀' },
-    { name: 'Linux', icon: '🐧' },
-    { name: 'Burp Suite', icon: '🔍' },
-    { name: 'Wireshark', icon: '📡' },
-    { name: 'Metasploit', icon: '⚡' }
+    // Programming Languages
+    { name: 'Python', icon: '🐍', category: 'Languages' },
+    { name: 'JavaScript', icon: '🟨', category: 'Languages' },
+    { name: 'TypeScript', icon: '🔷', category: 'Languages' },
+    { name: 'Java', icon: '☕', category: 'Languages' },
+    { name: 'C++', icon: '⚡', category: 'Languages' },
+    { name: 'Solidity', icon: '💎', category: 'Languages' },
+    
+    // Frontend Technologies
+    { name: 'React', icon: '⚛️', category: 'Frontend' },
+    { name: 'Next.js', icon: '🚀', category: 'Frontend' },
+    { name: 'Vue.js', icon: '💚', category: 'Frontend' },
+    { name: 'HTML5', icon: '🌐', category: 'Frontend' },
+    { name: 'CSS3', icon: '🎨', category: 'Frontend' },
+    { name: 'Tailwind', icon: '💨', category: 'Frontend' },
+    
+    // Backend Technologies
+    { name: 'Node.js', icon: '🟢', category: 'Backend' },
+    { name: 'Express.js', icon: '🚂', category: 'Backend' },
+    { name: 'Django', icon: '🎯', category: 'Backend' },
+    { name: 'Flask', icon: '🌶️', category: 'Backend' },
+    { name: 'FastAPI', icon: '⚡', category: 'Backend' },
+    
+    // Databases
+    { name: 'MongoDB', icon: '🍃', category: 'Database' },
+    { name: 'PostgreSQL', icon: '🐘', category: 'Database' },
+    { name: 'MySQL', icon: '🗄️', category: 'Database' },
+    { name: 'Redis', icon: '🔴', category: 'Database' },
+    
+    // DevOps & Tools
+    { name: 'Docker', icon: '🐳', category: 'DevOps' },
+    { name: 'Kubernetes', icon: '☸️', category: 'DevOps' },
+    { name: 'AWS', icon: '☁️', category: 'DevOps' },
+    { name: 'Git', icon: '📚', category: 'DevOps' },
+    { name: 'Linux', icon: '🐧', category: 'DevOps' },
+    { name: 'Nginx', icon: '🌐', category: 'DevOps' },
+    
+    // Security Tools
+    { name: 'Burp Suite', icon: '🔍', category: 'Security' },
+    { name: 'Wireshark', icon: '📡', category: 'Security' },
+    { name: 'Metasploit', icon: '💥', category: 'Security' },
+    { name: 'Nmap', icon: '🗺️', category: 'Security' },
+    { name: 'OWASP ZAP', icon: '⚡', category: 'Security' },
+    { name: 'Kali Linux', icon: '🦴', category: 'Security' },
+    
+    // Development Tools
+    { name: 'VS Code', icon: '🔧', category: 'Tools' },
+    { name: 'Postman', icon: '📮', category: 'Tools' },
+    { name: 'Figma', icon: '🎨', category: 'Tools' },
+    { name: 'Jira', icon: '📋', category: 'Tools' },
+    { name: 'Slack', icon: '💬', category: 'Tools' },
+    
+    // Emerging Tech
+    { name: 'Blockchain', icon: '⛓️', category: 'Emerging' },
+    { name: 'Web3', icon: '🌐', category: 'Emerging' },
+    { name: 'IoT', icon: '📡', category: 'Emerging' },
+    { name: 'AI/ML', icon: '🤖', category: 'Emerging' }
   ];
 
   const certifications = [
@@ -180,19 +230,33 @@ const Skills = () => {
           <h3 className="text-3xl font-bold text-center mb-12 gradient-text">
             Tools & Technologies
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-            {tools.map((tool, index) => (
-              <div
-                key={index}
-                className="glass p-4 rounded-xl text-center hover:scale-110 transition-transform duration-300 group"
-              >
-                <div className="text-2xl mb-2 group-hover:scale-125 transition-transform">
-                  {tool.icon}
-                </div>
-                <div className="text-sm font-medium text-foreground/80">{tool.name}</div>
-              </div>
-            ))}
-          </div>
+          <p className="text-center text-foreground/70 mb-8">
+            Swipe or use arrows to explore my technology stack
+          </p>
+          
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {tools.map((tool, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/5 lg:basis-1/6">
+                  <div className="glass p-4 rounded-xl text-center hover:scale-110 transition-transform duration-300 group h-full">
+                    <div className="text-2xl mb-2 group-hover:scale-125 transition-transform">
+                      {tool.icon}
+                    </div>
+                    <div className="text-sm font-medium text-foreground/80 mb-1">{tool.name}</div>
+                    <div className="text-xs text-foreground/50 capitalize">{tool.category}</div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="glass border-white/20 hover:border-white/40 text-foreground hover:text-foreground" />
+            <CarouselNext className="glass border-white/20 hover:border-white/40 text-foreground hover:text-foreground" />
+          </Carousel>
         </div>
 
         {/* Certifications */}
