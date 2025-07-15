@@ -77,7 +77,6 @@
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
   }
-  }
   
   @keyframes gridMove {
     0% { transform: translate(0, 0); }
