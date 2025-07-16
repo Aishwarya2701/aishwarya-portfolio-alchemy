@@ -52,8 +52,8 @@ const Projects = () => {
     {
       title: 'CyberNexus - AI Cybersecurity SOC Dashboard',
       description: 'Developed an AI-powered SOC dashboard that accelerated incident triage by 40%. Features real-time threat analysis, integrated phishing simulation and deepfake alerts, boosting threat coverage.',
-      tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Python', 'OpenAI API'],
-      github: 'https://github.com/Aishwarya2701',
+      tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Python', 'OpenAI API', 'Docker'],
+      github: 'https://github.com/Aishwarya2701/CyberNexus',
       featured: true,
       type: 'security',
       status: 'Production',
@@ -61,10 +61,10 @@ const Projects = () => {
       duration: '6 months'
     },
     {
-      title: 'EcoSense - Smart IoT-Based Air Quality Monitoring System',
+      title: 'EcoSense - Smart IoT Air Quality Monitoring',
       description: 'Created a real-time AQI monitoring platform with live sensor data and alerts. Built web/mobile dashboards and gamified user actions via QR points. Used blockchain to ensure secure logging of 1000+ environmental records.',
-      tags: ['IoT', 'Python', 'Flask', 'JavaScript', 'Blockchain'],
-      github: 'https://github.com/Aishwarya2701',
+      tags: ['IoT', 'Python', 'Flask', 'JavaScript', 'Blockchain', 'Arduino', 'PostgreSQL'],
+      github: 'https://github.com/Aishwarya2701/AQI-Monitoring-System',
       featured: true,
       type: 'iot',
       status: 'Live',
@@ -72,15 +72,48 @@ const Projects = () => {
       duration: '4 months'
     },
     {
+      title: 'Intelligent Network Vulnerability Scanner',
+      description: 'Built an automated vulnerability assessment tool using machine learning to identify and classify security threats. Implemented OWASP Top 10 detection with custom payload generation and achieved 95% accuracy in threat identification.',
+      tags: ['Python', 'TensorFlow', 'Nmap', 'SQLMap', 'Django', 'Redis', 'Celery'],
+      github: 'https://github.com/Aishwarya2701',
+      featured: true,
+      type: 'security',
+      status: 'Production',
+      team: '2 members',
+      duration: '5 months'
+    },
+    {
       title: 'Kosmos - Metacommerce E-Commerce Platform',
       description: 'Designed a 3D shopping experience platform merging physical and digital shopping. Secured transactions through encryption and custom backend logic. Increased user engagement by 50% during beta testing.',
-      tags: ['ReactJS', '3D JS', 'NodeJS'],
+      tags: ['ReactJS', 'Three.js', 'NodeJS', 'Express', 'MongoDB', 'Stripe API', 'WebGL'],
       github: 'https://github.com/Aishwarya2701',
       featured: true,
       type: 'web',
       status: 'Beta',
       team: '5 members',
       duration: '8 months'
+    },
+    {
+      title: 'Smart Campus Security System',
+      description: 'Developed an integrated campus security solution with facial recognition, anomaly detection, and real-time alert systems. Deployed across 15+ buildings with 99.2% uptime and reduced security incidents by 65%.',
+      tags: ['Python', 'OpenCV', 'PyTorch', 'FastAPI', 'Kafka', 'Redis', 'PostgreSQL'],
+      github: 'https://github.com/Aishwarya2701',
+      featured: true,
+      type: 'security',
+      status: 'Production',
+      team: '6 members',
+      duration: '10 months'
+    },
+    {
+      title: 'Blockchain-Based Supply Chain Tracker',
+      description: 'Created a transparent supply chain management system using Ethereum smart contracts. Features QR code tracking, immutable transaction logs, and real-time shipment monitoring with 100% data integrity.',
+      tags: ['Solidity', 'Web3.js', 'ReactJS', 'NodeJS', 'IPFS', 'Ganache', 'MetaMask'],
+      github: 'https://github.com/Aishwarya2701',
+      featured: true,
+      type: 'web',
+      status: 'Live',
+      team: '4 members',
+      duration: '7 months'
     }
   ];
 
