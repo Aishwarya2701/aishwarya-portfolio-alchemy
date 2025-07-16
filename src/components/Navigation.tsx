@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Github, Mail, FileText } from 'lucide-react';
+import { Menu, X, Github, Mail, FileText, Download } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,6 +60,15 @@ const Navigation = () => {
               >
                 <Mail size={20} />
               </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="p-2 glass rounded-full hover:scale-110 transition-transform"
+                title="Download Resume"
+              >
+                <Download size={20} />
+              </a>
+              <ThemeToggle />
             </div>
           </div>
 
@@ -99,6 +109,15 @@ const Navigation = () => {
               >
                 <Mail size={20} />
               </a>
+              <a
+                href="/resume.pdf"
+                download
+                className="p-2 glass rounded-full hover:scale-110 transition-transform"
+                title="Download Resume"
+              >
+                <Download size={20} />
+              </a>
+              <ThemeToggle />
             </div>
           </div>
         )}
