@@ -61,8 +61,9 @@ const Navigation = () => {
                 <Mail size={20} />
               </a>
               <a
-                href="/resume.pdf"
-                download
+                href="https://drive.google.com/uc?export=download&id=1jP97m8H-62vtzo5Z4jMRsdc5Fzm5SZd0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 glass rounded-full hover:scale-110 transition-transform"
                 title="Download Resume"
               >
@@ -110,8 +111,9 @@ const Navigation = () => {
                 <Mail size={20} />
               </a>
               <a
-                href="/resume.pdf"
-                download
+                href="https://drive.google.com/uc?export=download&id=1jP97m8H-62vtzo5Z4jMRsdc5Fzm5SZd0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 glass rounded-full hover:scale-110 transition-transform"
                 title="Download Resume"
               >
