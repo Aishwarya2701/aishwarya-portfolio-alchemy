@@ -72,15 +72,48 @@ const Projects = () => {
       duration: '4 months'
     },
     {
-      title: 'Intelligent Network Vulnerability Scanner',
-      description: 'Built an automated vulnerability assessment tool using machine learning to identify and classify security threats. Implemented OWASP Top 10 detection with custom payload generation and achieved 95% accuracy in threat identification.',
-      tags: ['Python', 'TensorFlow', 'Nmap', 'SQLMap', 'Django', 'Redis', 'Celery'],
-      github: 'https://github.com/Aishwarya2701',
+      title: 'Smart Greenhouse Monitoring System',
+      description: 'Developed an IoT-based automated greenhouse monitoring system with real-time environmental control. Features sensor data collection, automated irrigation, climate control, and mobile app integration for remote monitoring.',
+      tags: ['Arduino', 'IoT', 'Python', 'Flask', 'ReactJS', 'MongoDB', 'REST API'],
+      github: 'https://github.com/Aishwarya2701/Greenhouse-Project',
+      featured: true,
+      type: 'iot',
+      status: 'Production',
+      team: '3 members',
+      duration: '4 months'
+    },
+    {
+      title: 'Personal Budget Tracker Application',
+      description: 'Built a comprehensive personal finance management app with expense tracking, budget planning, and financial analytics. Features include category-wise spending analysis, bill reminders, and savings goal tracking.',
+      tags: ['ReactJS', 'NodeJS', 'Express', 'MongoDB', 'Chart.js', 'JWT', 'CSS3'],
+      github: 'https://github.com/Aishwarya2701/Budget-Tracker-App-',
+      featured: true,
+      type: 'web',
+      status: 'Live',
+      team: '2 members',
+      duration: '3 months'
+    },
+    {
+      title: 'Online Examination System',
+      description: 'Created a secure web-based examination platform with automated test creation, real-time monitoring, and instant result generation. Supports multiple question types, timer functionality, and detailed analytics.',
+      tags: ['Java', 'JSP', 'Servlet', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      github: 'https://github.com/Aishwarya2701/Online-Exam-System',
+      featured: true,
+      type: 'web',
+      status: 'Production',
+      team: '4 members',
+      duration: '5 months'
+    },
+    {
+      title: 'AI-Powered Proctoring System',
+      description: 'Developed an intelligent online exam proctoring solution using computer vision and ML algorithms. Features facial recognition, suspicious activity detection, browser monitoring, and automated flagging of violations.',
+      tags: ['Python', 'OpenCV', 'TensorFlow', 'Flask', 'WebRTC', 'SQLite', 'JavaScript'],
+      github: 'https://github.com/Aishwarya2701/Proctoring-system',
       featured: true,
       type: 'security',
-      status: 'Production',
-      team: '2 members',
-      duration: '5 months'
+      status: 'Beta',
+      team: '3 members',
+      duration: '6 months'
     },
     {
       title: 'Kosmos - Metacommerce E-Commerce Platform',
@@ -92,28 +125,6 @@ const Projects = () => {
       status: 'Beta',
       team: '5 members',
       duration: '8 months'
-    },
-    {
-      title: 'Smart Campus Security System',
-      description: 'Developed an integrated campus security solution with facial recognition, anomaly detection, and real-time alert systems. Deployed across 15+ buildings with 99.2% uptime and reduced security incidents by 65%.',
-      tags: ['Python', 'OpenCV', 'PyTorch', 'FastAPI', 'Kafka', 'Redis', 'PostgreSQL'],
-      github: 'https://github.com/Aishwarya2701',
-      featured: true,
-      type: 'security',
-      status: 'Production',
-      team: '6 members',
-      duration: '10 months'
-    },
-    {
-      title: 'Blockchain-Based Supply Chain Tracker',
-      description: 'Created a transparent supply chain management system using Ethereum smart contracts. Features QR code tracking, immutable transaction logs, and real-time shipment monitoring with 100% data integrity.',
-      tags: ['Solidity', 'Web3.js', 'ReactJS', 'NodeJS', 'IPFS', 'Ganache', 'MetaMask'],
-      github: 'https://github.com/Aishwarya2701',
-      featured: true,
-      type: 'web',
-      status: 'Live',
-      team: '4 members',
-      duration: '7 months'
     }
   ];
 
