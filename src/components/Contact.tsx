@@ -113,7 +113,7 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* Get in Touch Section */}
           <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
@@ -121,92 +121,63 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
                   <MessageSquare className="text-purple-400" size={24} />
-                  Send me a message
+                  Get in Touch
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground/80">
-                        Name
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="glass border-white/20 focus:border-purple-400"
-                        placeholder="Your name"
-                      />
+              <CardContent className="space-y-6">
+                <p className="text-foreground/70 text-lg">
+                  I'm always open to discussing new opportunities, collaborating on exciting projects, 
+                  or just having a chat about technology and innovation.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 glass rounded-lg border border-white/10 hover:border-purple-400/30 transition-colors">
+                    <div className="p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500">
+                      <Mail size={20} className="text-white" />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground/80">
-                        Email
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="glass border-white/20 focus:border-purple-400"
-                        placeholder="your.email@example.com"
-                      />
+                      <h4 className="font-semibold">Email Me</h4>
+                      <a 
+                        href="mailto:aishiyer2701@gmail.com" 
+                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                      >
+                        aishiyer2701@gmail.com
+                      </a>
                     </div>
                   </div>
                   
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-2 text-foreground/80">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      required
-                      className="glass border-white/20 focus:border-purple-400"
-                      placeholder="What's this about?"
-                    />
+                  <div className="flex items-center gap-4 p-4 glass rounded-lg border border-white/10 hover:border-purple-400/30 transition-colors">
+                    <div className="p-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700">
+                      <Linkedin size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Connect on LinkedIn</h4>
+                      <a 
+                        href="https://www.linkedin.com/in/aishwaryaiyer777/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                      >
+                        @aishwaryaiyer777
+                      </a>
+                    </div>
                   </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground/80">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={6}
-                      className="glass border-white/20 focus:border-purple-400 resize-none"
-                      placeholder="Tell me about your project or just say hello!"
-                    />
-                  </div>
-                  
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white border-0 group"
-                  >
-                    {isSubmitting ? (
-                      <div className="flex items-center">
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Sending...
-                      </div>
-                    ) : (
-                      <>
-                        <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={18} />
-                        Send Message
-                      </>
-                    )}
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button asChild className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600">
+                    <a href="mailto:aishiyer2701@gmail.com">
+                      <Mail className="mr-2" size={18} />
+                      Send Email
+                    </a>
                   </Button>
-                </form>
+                  <Button asChild variant="outline" className="border-white/20 hover:border-purple-400/50">
+                    <a href="https://www.linkedin.com/in/aishwaryaiyer777/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="mr-2" size={18} />
+                      LinkedIn
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
