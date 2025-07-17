@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from 'react';
-import { Github, ExternalLink, Star, GitFork, Code, Database, Globe, Shield, Calendar, Users } from 'lucide-react';
+import { Github, ExternalLink, Star, GitFork, Code, Database, Globe, Shield } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -56,9 +56,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/CyberNexus',
       featured: true,
       type: 'security',
-      status: 'Production',
-      team: '4 members',
-      duration: '6 months'
+      status: 'Production'
     },
     {
       title: 'EcoSense - Smart IoT Air Quality Monitoring',
@@ -67,7 +65,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/AQI-Monitoring-System',
       featured: true,
       type: 'iot',
-      status: 'Live',
+      status: 'Live'
     },
     {
       title: 'Smart Greenhouse Monitoring System',
@@ -76,9 +74,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/Greenhouse-Project',
       featured: true,
       type: 'iot',
-      status: 'Production',
-      team: '3 members',
-      duration: '4 months'
+      status: 'Production'
     },
     {
       title: 'Personal Budget Tracker Application',
@@ -87,9 +83,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/Budget-Tracker-App-',
       featured: true,
       type: 'web',
-      status: 'Live',
-      team: '2 members',
-      duration: '1 month'
+      status: 'Live'
     },
     {
       title: 'Online Examination System',
@@ -98,9 +92,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/Online-Exam-System',
       featured: true,
       type: 'web',
-      status: 'Production',
-      team: '4 members',
-      duration: '3 months'
+      status: 'Production'
     },
     {
       title: 'AI-Powered Proctoring System',
@@ -109,7 +101,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701/Proctoring-system',
       featured: true,
       type: 'security',
-      status: 'Beta',
+      status: 'Beta'
     },
     {
       title: 'Kosmos - Metacommerce E-Commerce Platform',
@@ -118,9 +110,7 @@ const Projects = () => {
       github: 'https://github.com/Aishwarya2701',
       featured: true,
       type: 'web',
-      status: 'Beta',
-      team: '4 members',
-      duration: '3 months'
+      status: 'Beta'
     }
   ];
 
@@ -222,18 +212,6 @@ const Projects = () => {
                   <p className="text-foreground/70 text-sm mb-6 leading-relaxed">
                     {project.description}
                   </p>
-                  
-                  {/* Project Stats */}
-                  <div className="grid grid-cols-2 gap-4 mb-6 p-4 rounded-lg bg-black/20 border border-white/5">
-                    <div className="flex items-center gap-2 text-sm">
-                      <Users size={16} className="text-purple-400" />
-                      <span className="text-foreground/70">Team: {project.team}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm">
-                      <Calendar size={16} className="text-blue-400" />
-                      <span className="text-foreground/70">Duration: {project.duration}</span>
-                    </div>
-                  </div>
                   
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
