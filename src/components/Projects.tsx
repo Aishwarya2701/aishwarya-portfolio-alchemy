@@ -68,8 +68,6 @@ const Projects = () => {
       featured: true,
       type: 'iot',
       status: 'Live',
-      team: '3 members',
-      duration: '4 months'
     },
     {
       title: 'Smart Greenhouse Monitoring System',
@@ -91,7 +89,7 @@ const Projects = () => {
       type: 'web',
       status: 'Live',
       team: '2 members',
-      duration: '3 months'
+      duration: '1 month'
     },
     {
       title: 'Online Examination System',
@@ -102,7 +100,7 @@ const Projects = () => {
       type: 'web',
       status: 'Production',
       team: '4 members',
-      duration: '5 months'
+      duration: '3 months'
     },
     {
       title: 'AI-Powered Proctoring System',
@@ -112,8 +110,6 @@ const Projects = () => {
       featured: true,
       type: 'security',
       status: 'Beta',
-      team: '3 members',
-      duration: '6 months'
     },
     {
       title: 'Kosmos - Metacommerce E-Commerce Platform',
@@ -123,8 +119,8 @@ const Projects = () => {
       featured: true,
       type: 'web',
       status: 'Beta',
-      team: '5 members',
-      duration: '8 months'
+      team: '4 members',
+      duration: '3 months'
     }
   ];
 
